@@ -54,6 +54,8 @@ const state = {
     const cs = this.getState();
     const nombreGuardadoEnState = cs.nombre;
     const idGuardadoEnState = cs.rtdbRoomId;
+    // Crear el nuevo mensaje
+    const newMessage = { from: nombreGuardadoEnState, message: message };
     fetch(API_BASE_URL + "/messages", {
       method: "post",
       headers: {
@@ -70,6 +72,9 @@ const state = {
       })
       .then((data) => {
         console.log("soy sendMessage", data);
+        // Agregar el nuevo mensaje al estado
+        cs.messages.push(newMessage);
+        this.setState(cs); // Notificar a los suscriptores
       });
   },
   setEmailAndName(params: { email: string; name: string; roomId?: string }) {

@@ -111,6 +111,8 @@ export function chatPage() {
         const input = inputComp.shadowRoot.querySelector("input"); //devuelve los datos del input
         const data = input.value; //devuelve lo ingresado en el input
         state.sendMessage(data);
+        input.value = "";
+
         //console.log(data);
       });
       this.shadow.appendChild(div);
