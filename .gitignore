@@ -5,3 +5,4 @@ dist
 .parcel-cache
 package-look.json
 server-dist
+.parcel-cache
