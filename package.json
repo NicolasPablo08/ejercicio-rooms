@@ -19,7 +19,7 @@
     "dev:front": "parcel serve ./src/index.html",
     "dev:back": "nodemon --watch ./backend/server.ts --exec \"ts-node ./dev.ts\"",
     "build:back": "tsc",
-    "build:front": "parcel build src/index.html --cache-dir .parcel-cache --dist-dir dist",
+    "build:front": "parcel build src/index.html --no-cache --dist-dir dist",
     "start:back": "node server-dist/server.js"
   },
   "devDependencies": {
