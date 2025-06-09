@@ -19,7 +19,7 @@
     "dev:back": "nodemon --watch ./backend/server.ts --exec \"ts-node ./dev.ts\"",
     "build:back": "tsc",
     "build:front": "npx parcel build src/index.html --dist-dir dist --no-cache",
-    "start:back": "node dist/server.js"
+    "start:back": "node server-dist/server.js"
   },
   "devDependencies": {
     "@types/node": "^22.15.30",

@@ -4,7 +4,7 @@
     "module": "commonjs", // define el sistema de módulos que TypeScript usará al compilar tu código. Se utiliza para determinar cómo se generará el código JavaScript resultante en términos de importaciones y exportaciones.
     "moduleResolution": "node", //Define cómo TypeScript busca esos módulos en tu proyecto, node: Utiliza la misma lógica de resolución de módulos que Node.js. Busca módulos en node_modules y sigue la misma lógica de búsqueda que Node.js.
     "resolveJsonModule": true,
-    "outDir": "./dist", //carpeta donde se guardaran los archivos compilados
+    "outDir": "./server-dist", //carpeta donde se guardaran los archivos compilados
     "rootDir": "./backend",
     "esModuleInterop": true //Si usás librerías que exportan con ES Modules para evitar problemas al importar
   },
